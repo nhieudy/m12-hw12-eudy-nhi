@@ -140,12 +140,21 @@ body {
   .nav__link--active::after {
     display: none;
   }
-
+  .img_card {
+    scale: 1.1;
+  }
   .img_card__container {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(400px, 1fr)
-    ); /*Did this so there wasn't a weird affected when going to tablet size (it would go back to 3 cols again and then 2)*/
-    row-gap: 50px;
+    row-gap: 100px;
+    column-gap: 50px;
+  }
+}
+
+/*Mobile, the cards become slightly larger*/
+@media screen and (max-width: 500px) {
+  .img_card {
+    scale: 1.25;
+  }
+  .img_card__container {
+    row-gap: 150px;
   }
 }
