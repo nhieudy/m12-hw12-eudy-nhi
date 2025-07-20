@@ -11,7 +11,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   min-height: 100vh;
- /*Edit for Grid*/
+  /*Edit for Grid*/
   display: grid;
   grid-template-areas:
     "header header"
@@ -146,5 +146,6 @@ body {
       auto-fill,
       minmax(400px, 1fr)
     ); /*Did this so there wasn't a weird affected when going to tablet size (it would go back to 3 cols again and then 2)*/
+    row-gap: 50px;
   }
 }
